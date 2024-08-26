@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contt{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .item{
+        width:30%
+        
+    }
+    
+</style>
+<body>
+    
+
+    <script>
+        var h1Cre = document.createElement("h1");
+        h1Cre.innerText="Alagandhula Kavya Sree";
+        
+        h1Cre.style.textDecoration="underline"
+
+        var center_cre1=document.createElement("center");
+        center_cre1.appendChild(h1Cre);
+
+        var gmail = document.createElement("p");
+        gmail.innerText="Gmail:alagandulakavya@gmail.com";
+
+        var center_cre2=document.createElement("center");
+        center_cre2.appendChild(gmail);
+
+        var ph_no = document.createElement("p");
+        ph_no.innerText="Mobile Number:+91 9392803595";
+
+        var center_cre3=document.createElement("center");
+        center_cre3.appendChild(ph_no);
+
+        var hr = document.createElement("hr")
+
+        var h3cre_carrier=document.createElement("h3");
+        h3cre_carrier.innerText="Carrier Objective:";
+
+        var pcre=document.createElement("p");
+        pcre.innerText="Recent graduate with a strong foundation in Python, Java, and front-end technologies (HTML, CSS, JavaScript), seeking to leverage my technical skills and passion for software development in a dynamic environment. Eager to contribute to a collaborative team, while continuously learning and growing as a developer. Motivated to apply my knowledge in coding, problem-solving, and user interface design to create innovative and efficient software solutions."
+        
+        var hr = document.createElement("hr");
+
+        var main_cont=document.createElement("div")
+        main_cont.className = "contt"
+
+        var tech_div=document.createElement("div");
+        tech_div.className="item"
+
+        var tech=document.createElement("h3")
+        tech.innerText="Technical Skills:";
+
+        var li_1=document.createElement("li")
+        li_1.innerText="Html";
+
+        var li_2=document.createElement("li")
+        li_2.innerText="Css"
+
+        var li_3=document.createElement("li")
+        li_3.innerText="Java Script";
+
+        var li_4=document.createElement("li")
+        li_4.innerText="Sql";
+
+        var ul=document.createElement("ul")
+        ul.append(li_1,li_2,li_3,li_4)
+        tech_div.append(tech)
+        tech_div.append(ul)
+
+
+        var Ssdiv = document.createElement("div")
+        Ssdiv.innerText.className="Ss"
+
+        var soft=document.createElement("h3")
+        soft.innerText="Soft Skills:";
+
+        var li1=document.createElement("li")
+        li1.innerText="Time Management";
+
+        var li2=document.createElement("li")
+        li2.innerText="Adaptability"
+
+        var li3=document.createElement("li")
+        li3.innerText="Friendliness"
+
+        var li4=document.createElement("li")
+        li4.innerText="Teamwork"
+
+        
+
+        var ul=document.createElement("ul")
+        ul.append(li1,li2,li3,li4)
+        Ssdiv.append(soft)
+        Ssdiv.append(ul)
+        
+       
+        main_cont.append(tech_div,Ssdiv)
+
+        var hr1 = document.createElement("hr");
+        // languages.........
+        var cont=document.createElement("div")
+        cont.className = "cont"
+
+        var lang_div=document.createElement("div");
+        lang_div.className="item1"
+
+        var lang=document.createElement("h3")
+        lang.innerText="Languages:";
+
+        var lis_1=document.createElement("li")
+        lis_1.innerText="Telugu";
+
+        var lis_2=document.createElement("li")
+        lis_2.innerText="hindi"
+
+        var lis_3=document.createElement("li")
+        lis_3.innerText="English";
+
+
+        var ul=document.createElement("ul")
+        ul.append(lis_1,lis_2,lis_3)
+        lang_div.append(lang)
+        lang_div.append(ul)
+        cont.append(lang_div)
+
+        var hr2 = document.createElement("hr");
+        // declaration.........
+        var decl=document.createElement("h3")
+        decl.innerText="Declaration:";
+
+        var dec=document.createElement("p")
+        dec.innerText="I here by declare that the details mentioned above in my resume are correct to the best of my knowledge and belief.";
+
+        var hr3 = document.createElement("hr");
+
+        var sig=document.createElement("pre")
+        sig.innerHTML="Kavya sree                                                                                16/08/2024                                                                     sign";
+
+        var si=document.createElement("img")
+        si.src="1.jpg"
+        si.style.width="100px";
+        si.style.marginLeft="80%";
+        si.style.transform="translateX(100%)";
+
+        document.body.setAttribute("style","background-color:rgb(222,184,134)")
+    
+        document.body.append(center_cre1,center_cre2,center_cre3,h3cre_carrier,pcre,hr,main_cont,hr1,cont,hr2,decl,dec,hr3,sig,si);
+
+        
+
+    </script>
+</body>
+</html>
